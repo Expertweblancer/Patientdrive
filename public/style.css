@@ -1,0 +1,792 @@
+@font-face {
+    font-family: 'GOTHAMBOOK';
+    src: url('fonts/GOTHAMBOOK.eot');
+    src: url('fonts/GOTHAMBOOK.eot') format('embedded-opentype'),
+         url('fonts/GOTHAMBOOK.woff2') format('woff2'),
+         url('fonts/GOTHAMBOOK.woff') format('woff'),
+         url('fonts/GOTHAMBOOK.ttf') format('truetype'),
+         url('fonts/GOTHAMBOOK.svg#GOTHAMBOOK') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('fonts/GothamBold.eot');
+    src: url('fonts/GothamBold.eot') format('embedded-opentype'),
+         url('fonts/GothamBold.woff2') format('woff2'),
+         url('fonts/GothamBold.woff') format('woff'),
+         url('fonts/GothamBold.ttf') format('truetype'),
+         url('fonts/GothamBold.svg#GothamBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamBlackRegular';
+    src: url('fonts/GothamBlackRegular.eot');
+    src: url('fonts/GothamBlackRegular.eot') format('embedded-opentype'),
+         url('fonts/GothamBlackRegular.woff2') format('woff2'),
+         url('fonts/GothamBlackRegular.woff') format('woff'),
+         url('fonts/GothamBlackRegular.ttf') format('truetype'),
+         url('fonts/GothamBlackRegular.svg#GothamBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BAHNSCHRIFT';
+    src: url('fonts/BAHNSCHRIFT.eot');
+    src: url('fonts/BAHNSCHRIFT.eot') format('embedded-opentype'),
+         url('fonts/BAHNSCHRIFT.woff2') format('woff2'),
+         url('fonts/BAHNSCHRIFT.woff') format('woff'),
+         url('fonts/BAHNSCHRIFT.ttf') format('truetype'),
+         url('fonts/BAHNSCHRIFT.svg#BAHNSCHRIFT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Css Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,
+dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,
+tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	padding:0;
+    margin:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+body {
+	font-family: 'GOTHAMBOOK' !important;
+	font-size: 18px;
+	font-weight: 400;
+	background:#fff;
+	color:#000;
+	padding:0;
+	margin:0;
+}
+ul,ol { list-style:none; }
+img,fieldset { border:none; }
+a {text-decoration:none;}
+a:hover { text-decoration:none; }
+.skip { position:absolute; left:-9999px; }
+article,aside,details,figcaption,figure,footer,
+header,hgroup,main,nav,section,summary { display: block; }
+figure { margin:0; padding:0; }
+.clear {
+	clear: both;
+	height:0;
+	width:100%;
+	overflow:hidden;
+}
+embed, iframe, object, video { max-width: 100%; }
+input, textarea { -webkit-appearance: none; -webkit-border-radius: 0; }
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+img { max-width: 100%; height: auto; display: block; }
+a {
+	-webkit-transition: all .5s ease-out; -moz-transition: all .5s ease-out; -ms-transition: all .5s ease-out; -o-transition: all .5s ease-out; transition: all .5s ease-out;
+}
+[type="reset"], [type="submit"], button, html [type="button"] {
+    -webkit-appearance: none;
+}
+
+/*==============================
+	Page structure      
+================================*/
+#wrapper {
+	width: 100%; 
+	overflow:hidden; 
+}
+.clear {
+    height: 0;
+    clear: both;
+}
+.p-defult {
+    padding: 0 !important;
+}
+
+/*==============================
+	header-area      
+================================*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.header-top { 
+    padding: 18px 0 21px 0;
+    background: url(images/bg-header-top.png) no-repeat center center; 
+    background-size: cover;
+}
+.logo { padding: 14px 4px 12px 4px; }
+.logo {
+    padding: 0;
+}
+.header-top-right { 
+    float: right;
+    padding: 0 33px; 
+}
+.header-top-right a.telephone {
+    font-family: 'GothamBlackRegular';
+    font-size: 27.53px;
+    line-height: 34px;
+    color: #fff;
+}
+.header-top-right a.telephone:hover { color: #b5b5b6 !important; }
+.req-conslt {
+    font-family: 'GothamBlackRegular';
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 33px;
+    height: 33px;
+    width: 227px;
+    background: #fff;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    margin-top: 8px;
+}
+.req-conslt a { 
+    display: block;
+    color: #0479a7; 
+}
+.req-conslt:hover {
+    background: #0479a7;
+    -webkit-transition: all .5s ease-out; 
+    -moz-transition: all .5s ease-out; 
+    -ms-transition: all .5s ease-out; 
+    -o-transition: all .5s ease-out; 
+    transition: all .5s ease-out; 
+} 
+.req-conslt:hover a {
+    color: #fff;
+}
+.header-area nav {
+    background: #13587f;
+    padding: 2px 0 !important;
+}
+.header-area nav ul li {
+    font-family: 'GothamBlackRegular';
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 50px;
+    border-left: 2px solid #1d88c4;
+}
+.header-area nav ul li:last-child { border-right: 2px solid #1d88c4; }
+.header-area nav ul li a {
+    display: block;
+    border-left: 4px solid #104a71;
+    color: #fff !important;
+    padding: 0 !important;
+}
+.header-area nav ul li:first-child a.nav-link { padding: 0 62px 0 61px !important; }
+.header-area nav ul li:nth-child(2) a.nav-link { padding: 0 24px 0 27px !important; }
+.header-area nav ul li:nth-child(3) a.nav-link { padding: 0 12px !important; }
+.header-area nav ul li:nth-child(4) a.nav-link { padding: 0 40px 0 35px !important; }
+.header-area nav ul li:last-child a.nav-link {
+    padding: 0 33px 0 48px !important;
+    border-right: 2px solid #104a71;
+}
+.header-area nav ul li a.nav-link:hover { color: #b5b5b6 !important; }
+.header-area nav ul li.active a.nav-link { color: #b5b5b6 !important; }
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: transparent;
+    outline: none !important; 
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/*==============================
+    banner     
+================================*/
+.banner {
+    position: relative;
+    background: url(images/banner.png) no-repeat center center;
+    background-size: cover;
+    height: 613px;
+    overflow: hidden;
+}
+.banner-area {
+    position: absolute;
+    top: 169px;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+}
+.banner-area-wrap {
+    max-width: 975px;
+    margin: 0 auto;
+}
+.banner-area figure { margin-top: -45px; }
+.banner-area-info {
+    padding-top: 96px;
+}
+.banner-area-info h3 {
+    font-family: 'BAHNSCHRIFT';
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #046795;
+    margin-bottom: 12px;
+}
+.banner-area-info p {
+    line-height: 21px;
+    margin-bottom: 34px;
+}
+.banner-area-info h2 {
+    font-family: 'BAHNSCHRIFT';
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #046795;
+    margin-bottom: 25px;
+}
+.learn-more {
+    font-family: 'GothamBlackRegular';
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 33px;
+    height: 33px;
+    width: 136px;
+    background: #666a71;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+}
+.learn-more a { 
+    display: block;
+    color: #fff; 
+}
+.learn-more:hover {
+    background: #fff;
+    -webkit-transition: all .5s ease-out; 
+    -moz-transition: all .5s ease-out; 
+    -ms-transition: all .5s ease-out; 
+    -o-transition: all .5s ease-out; 
+    transition: all .5s ease-out; 
+}
+.learn-more:hover a {
+    color: #666a71; 
+}
+
+/*==============================
+    services     
+================================*/
+.services {
+    background: url(images/service-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 42px 15px 0 15px;
+}
+.services-item h3 {
+    position: relative;
+    font-family: 'BAHNSCHRIFT';
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 0 0 77px;
+    margin: 0 0 0 28px;
+}
+.services-item {
+    position: relative;
+    background: url(images/service-item-bg.png) repeat-x left bottom;
+    padding: 34px 0 32px 0;
+}
+.services-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 61px;
+    background: #f3f7f9;
+}
+.services-item h3 span {
+    display: block;
+}
+.services-item h3::before {
+    font-size: 61.9px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 30px;
+}
+.services-item h3:nth-child(1)::before { content: '01'; }
+.services-item h3:nth-child(2)::before { content: '02'; }
+.services-item h3:nth-child(3)::before { content: '03'; }
+
+/*==============================
+    marketing     
+================================*/
+.marketing {
+    padding: 61px 0 54px 0;
+}
+.marketing-area {
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+.marketing-item {
+    width: 50%;
+    max-width: 556px;
+    float: left;
+    padding: 0 13px;
+}
+.marketing-area:first-child .img figure {
+    display: table;
+    margin: 0 auto;
+}
+.marketing-area:nth-child(even) .content {
+    float: right;
+}
+.marketing-area:nth-child(even) .img {
+    float: left;
+}
+.marketing-item figure {
+    margin-top: 16px;
+}
+.marketing-item h3 {
+    font-family: 'BAHNSCHRIFT';
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #046795;
+    margin-bottom: 28px;
+}
+.marketing-item p {
+    font-family: 'GOTHAMBOOK';
+    line-height: 20px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/*==============================
+    case-studies     
+================================*/
+.case-studies {
+    background: url(images/case-studies-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 34px 0 92px 0;
+}
+.case-studies-area {
+    position: relative;
+    padding: 0 78px;
+    overflow: hidden;
+}
+.case-studies-area::before {
+    font-family: 'BAHNSCHRIFT';
+    font-size: 61.9px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    color: #13587f;
+    background: #fff;
+}
+.case-studies-area:nth-child(1)::before {
+    content: '01'
+}
+.case-studies-area:nth-child(2)::before {
+    content: '02';
+}
+.case-studies-area:nth-child(3)::before {
+    content: '03';
+}
+.case-studies-img {
+    /*width: 336px;*/
+    width: 28.23%;
+    float: left;
+}
+.case-studies-content {
+    /*width: 668px;*/
+    width: 66.38%;
+    float: right;
+    padding: 0 32px 20px 32px;
+}
+.case-studies-content .title {
+    background: #8092a0;
+    padding: 0 13px;
+    margin-bottom: 15px;
+}
+.case-studies-content .title h3 {
+    font-family: 'BAHNSCHRIFT';
+    font-size: 26px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.case-studies-content ul {
+    margin-bottom: 21px;
+    padding: 0 13px;
+}
+.case-studies-content ul li {
+    line-height: 23px;
+    color: #fff;
+    list-style: initial;
+}
+.case-studies-content p {
+    font-family: 'GOTHAMBOOK';
+    line-height: 21px;
+    color: #fff;
+    margin-bottom: 21px;
+}
+.case-studies-content p span {
+    font-weight: ;
+}
+
+
+/*==============================
+    slider     
+================================*/
+.slider {
+    padding: 65px 0 44px 0;
+}
+.slider-area {
+    max-width: 1055px;
+    margin: 0 auto;
+    padding-bottom: 29px;
+    background: url(images/shadow.png) no-repeat center bottom;
+    overflow: hidden;
+    position: relative;
+}
+.slider-item {
+    margin: 0 13px 50px 13px;
+    -webkit-transition: all .5s ease-out; -moz-transition: all .5s ease-out; -ms-transition: all .5s ease-out; -o-transition: all .5s ease-out; transition: all .5s ease-out;
+}
+.slider-item {
+    padding: 15px 14px 0 14px;
+}
+.slider-item figure.small-logo {
+    max-width: 147px;
+}
+.slider-content {
+    padding: 0 25px;
+}
+.slider-content h3 {
+   font-family: 'GothamBold';
+   color: #505050;
+   position: relative;
+   line-height: 37px;
+}
+.slider-content h3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 27px;
+}
+.arrow-top h3:before { 
+    background: url(images/icon3.png) no-repeat 0 0;
+}
+.arrow-bottom h3:before { 
+    background: url(images/icon4.png) no-repeat 0 0;
+}
+.slider-content p {
+    color: #505050;
+    font-size: 7px;
+}
+.slider-item .inner {
+    border: 4px solid #ededed;
+} 
+.slider-item .inner .row {
+    margin: 16px 0 13px 0;
+}
+.slider-item:hover {
+    background: #63cec7;
+}
+.slider-item:hover .inner {
+   border-color: transparent;
+}
+.img-container {
+    position: relative;
+}
+.read-case-study {
+    font-size: 10px;
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    width: 160px;
+    background: #fff;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+}
+.read-case-study a { 
+    display: block;
+    color: #000; 
+}
+.slider-container {
+    position: relative;
+}
+.slider-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 32px;
+    height: 211px;
+    background: url(images/bg-arro-left.png) no-repeat 0 0;
+    transform: translateY(-50%);
+}
+.slider-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 32px;
+    height: 211px;
+    background: url(images/bg-arro-right.png) no-repeat 0 0;
+    transform: translateY(-50%);
+}
+.slider-area .owl-next, .slider-area.owl-prev {
+    border-radius: 0 !important;
+    width: 21px;
+    height: 83px;
+    position: absolute;
+    top: 80%;
+    z-index: 999;
+    transform: translateY(-80%);
+}
+.slider-area .owl-next {
+    top: 180px;
+    right: 0;
+    background: rgb(0,0,0,.5) !important;
+    height: 50px;
+    width: 50px;
+    z-index: 9999;
+}
+.slider-area .owl-prev {
+    left: 0;
+    background: rgb(0,0,0,.5) !important;
+    height: 50px;
+    width: 50px;
+    top: 180px;
+    z-index: 9999;
+}
+.slider-area .owl-next span,.slider-area .owl-prev span {
+    color: #fff !important;
+}
+.slider-area .owl-theme .owl-nav .disabled {
+    opacity: 1 !important;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+
+    display: none;
+}
+
+/*==============================
+    testimonial     
+================================*/
+.testimonial {
+    padding: 26px 0 78px 0;
+    background: url(images/testimonial-bg.png) no-repeat center center;
+    background-size: cover;
+}
+.testimonial-area {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.testimonial-item {}
+.testimonial-item figure {
+    display: table;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    margin: 0 auto 10px auto;
+
+}
+.testimonial-item h3 {
+    font-family: 'BAHNSCHRIFT';
+    line-height: 37px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.testimonial-item p {
+    font-style: italic;
+    line-height: 33px;
+    color: #fff9f4;
+    text-align: center;
+}
+.testimonial-area .owl-next,.owl-prev {
+    background: #fff !important;
+    border-radius: 0 !important;
+    width: 21px;
+    height: 83px;
+    position: absolute;
+    top: 80%;
+    z-index: 999;
+    transform: translateY(-80%);
+}
+.testimonial-area .owl-next {
+    right: -100px;
+}
+.testimonial-area .owl-prev {
+    left: -100px;
+}
+.testimonial-area .owl-next span, .owl-prev span {
+    color: #0043a8;
+}
+.testimonial-area .owl-theme .owl-nav .disabled {
+    opacity: 1 !important;
+}
+
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: block;
+}
+.owl-theme .owl-dots {
+    display: none;
+}
+
+
+
+/*==============================
+    patient-connect     
+================================*/
+.patient-connect {
+    padding: 75px 0 61px 0;
+}
+.patient-content figure {
+    float: right;
+    padding: 0 55px;
+    margin: 9px 0 75px 0;
+}
+.patient-content .title {
+    background: #13587f;
+    padding: 30px 40px;
+}
+.patient-content .title h3 {
+    font-family: 'BAHNSCHRIFT';
+    font-size: 28px;
+    line-height: 36px;
+    color: #fff;
+}
+.patient-content ul {
+    background: #666a71;
+    padding: 30px 40px;
+}
+.patient-content ul li {
+    color: #fff;
+    line-height: 22px;
+    list-style: initial;
+}
+.patient-content .learn-more {
+    margin-top: 84px;
+    background: #13587f;
+    margin-left: 15px;
+}
+
+/*==============================
+    contact     
+================================*/
+.contact {
+    background: url(images/contact.png) no-repeat center center;
+    background-size: cover;
+    padding: 60px 0 46px 0;
+}
+.contact-area {
+    max-width: 780px;
+    margin: 0 auto;
+}
+.contact-area h3 {
+   font-family: 'BAHNSCHRIFT';
+   font-size: 52px;
+   line-height: 64px;
+   color: #c3c3c5;
+   text-align: center;
+   margin-bottom: 24px;
+}
+.contact-area h3 a {
+    color: #c3c3c5;
+}
+.contact-area p {
+   line-height: 25px;
+   color: #fff;
+   text-align: center;
+   margin-bottom: 35px;
+}
+.contact-area .learn-more {
+    background: #fff;
+    margin: 0 auto;
+}
+.contact-area .learn-more a {
+    color: #13587f;
+
+}
+.contact-info-container {
+    max-width: 600px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.contact-area .contact-info h3 {
+    position: relative;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: left;
+    color: #fff;
+    padding: 0 0 0 57px;
+    margin-bottom: 0;
+}
+.contact-area .contact-info h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 47px;
+}
+.contact-area .nwm h3::before {
+    background: url(images/icon1.png) no-repeat 0 0;
+}
+.contact-area .toll h3::before {
+    background: url(images/icon2.png) no-repeat 0 0;
+}
+.contact-area .contact-info h3 span {
+    display: block;
+}
+.contact-area .contact-info h3 span:first-child {
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+.contact-area .contact-info h3 a {
+    color: #fff;
+    display: inline-block;
+}
+.contact-area .contact-info h3 a span:first-child {
+    font-family: 'Raleway', sans-serif;
+    color: #ebf2f5;
+    line-height: 25px;
+}
+.contact-area .contact-info h3 span:nth-child(2) {
+    font-family: 'GothamBold';
+}
+
+/*==============================
+    contact     
+================================*/
+footer {
+    padding: 40px 0;
+}
+.footer-area p {
+    font-family: 'GothamBold';
+    line-height: 30px;
+    color: #13587f;
+}

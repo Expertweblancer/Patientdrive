@@ -1,0 +1,293 @@
+@media screen and (min-width: 1200px){
+	.container { max-width: 1190px; }
+}
+@media screen and (max-width: 1199px){
+	.header-area nav ul li {
+		font-size: 16.31px;
+		border: none;
+	}
+	.header-area nav ul li:first-child a.nav-link { padding: 0 20px !important; }
+	.header-area nav ul li:nth-child(2) a.nav-link { padding: 0 20px !important; }
+	.header-area nav ul li:nth-child(3) a.nav-link { padding: 0 12px !important; }
+	.header-area nav ul li:nth-child(4) a.nav-link { padding: 0 20px !important; }
+	.header-area nav ul li:last-child a.nav-link { padding: 0 20px !important; }
+	.services-item h3 { font-size: 21px; }
+	.marketing-item h3 {
+		font-size: 24px;
+	}
+	.marketing-item p {
+		font-size: 16px;
+	}
+	.slider-container::before {
+	    
+	    left: -25px;
+	   
+	}
+	.slider-container::after {
+	   
+	    right: -25px;
+	    
+	}
+
+}
+@media screen and (max-width: 991px){
+	.header-area nav ul li:first-child a.nav-link { 
+		padding: 0 17px !important;
+		border: none; 
+	}
+	.header-area nav ul li:nth-child(2) a.nav-link { 
+		padding: 0 17px !important;
+		border: none; 
+	}
+	.header-area nav ul li:nth-child(3) a.nav-link { 
+		padding: 0 17px !important;
+		border: none; 
+	}
+	.header-area nav ul li:nth-child(4) a.nav-link { 
+		padding: 0 17px !important;
+		border: none; 
+	}
+	.header-area nav ul li:last-child a.nav-link { 
+		padding: 0 17px !important;
+		border: none; 
+	}
+	.header-area nav ul li:last-child { border: none; }
+	.banner-area-info h3 {
+		font-size: 25px;
+		line-height: 36px;
+	}
+	.banner {
+		height: 487px;
+	}
+	.banner-area-info p {
+		line-height: 20px;
+		margin-bottom: 21px;
+		font-size: 15px;
+	}
+	.banner-area-info {
+		padding-top: 50px;
+	}
+	.banner-area-info h2 {
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	.services-item h3 {
+		font-size: 16px;
+	}
+	.services-item h3 {
+		padding: 0 0 0 60px;
+		margin: 0 0 0 12px;
+	}
+	.services-item h3::before {
+		font-size: 50px;
+	}
+	.marketing-item {
+	    float: none;
+	    width: 100%;
+	    max-width: 100%;
+	}
+	.marketing-area:nth-child(even) .content {
+	    float: none;
+	}
+	.marketing-area:nth-child(even) .img {
+	    float: none;
+	}
+	.case-studies-area .title h3 {
+		font-size: 27.55px;
+		line-height: 50px;
+	}
+	.testimonial-item p {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.case-studies-img {
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.case-studies-content {
+	    width: 100%;
+	    float: right;
+	    padding: 0 0 20px 0;
+	}
+	.case-studies-area {
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 767px){
+	.logo {
+		display: table;
+		margin: 0 auto;
+		max-width: 250px;
+	}
+	.header-top-right {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+	.header-top-right a.telephone {
+		font-size: 22.53px;
+	}
+	.header-top-right {
+		text-align: center;
+	}
+	.banner-area-img {
+		padding-top: 34px;
+	}
+	.banner {
+		height: 950px;
+	}
+	.banner-area-info {
+		padding-top: 48px;
+	}
+	.banner-area-info h3 {
+		font-size: 21px;
+	}
+	.banner-area-info h2 {
+		font-size: 21px;
+	}
+	.learn-more {
+		font-size: 13px;
+	}
+	.req-conslt {
+		font-size: 13px;
+	}
+	.services-item figure {
+	   display: table;
+	   margin: 0 auto;
+	}
+	.patient-content figure {
+	    float: none;
+	    display: table;
+	    margin: 9px auto 75px auto;
+	}
+	.nwm,.toll {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 639px){
+	.slider-container::before {
+	    left: -13px; 
+	}
+	.slider-container::after {
+	    right: -13px; 
+	}
+}
+@media screen and (max-width: 575px){
+	.banner-area-info h3 {
+		font-size: 18px;
+	}
+	.banner-area-info h2 {
+		font-size: 18px;
+	}
+	.banner-area-info p {
+		font-size: 14px;
+	}
+	.marketing-item h3 {
+		font-size: 16px;
+	}
+	.case-studies-area .title h3 {
+		font-size: 15.55px;
+		line-height: 33px;
+	}
+	.owl-theme .owl-nav {
+		margin-top: 50px;
+	}
+	.owl-next,.owl-prev {
+	   position: initial;
+	   height: 27px;
+	   width: 27px;
+	   line-height: 21px;
+	   padding: 0 !important;
+	   text-align: center;
+	}
+	.testimonial {
+		padding: 26px 0;
+	}
+	.slider-container::before {
+	   display: none;
+	}
+	.slider-container::after {
+	   display: none;
+	}
+	.slider-area .owl-nav {
+	    display: none;
+	}
+	.case-studies-content p {
+		font-size: 16px;
+	}
+	.case-studies-area::before {
+		font-size: 50px;
+		top: 36px;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.case-studies-area {
+		padding-left: 50px;
+	}
+	.case-studies-content ul li {
+		font-size: 15px;
+	}
+	.case-studies-area .title h3 {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.case-studies-area::before {
+		font-size: 36px;
+	}
+	.marketing-item {
+	    padding: 0 0;
+	}
+	.patient-content .title h3 {
+	    font-size: 20px;
+	}
+	.contact-area h3 {
+	   font-size: 40px;
+	}
+	.testimonial-area .owl-prev {
+		display: none !important;
+	}
+	.footer-area p {
+		font-size: 12px;
+	}
+	.contact-area .contact-info h3 {
+		font-size: 20px;
+		padding-left: 47px;
+	}
+	.contact-area .toll h3::before {
+		background-size: 20px;
+	}
+	.contact-area .nwm h3::before {
+		background-size: 20px;
+	}
+
+	
+}
+@media screen and (max-width: 451px){
+	.banner-area-info h3 {
+		font-size: 17px;
+	}
+	.banner-area-info h2 {
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 430px){
+	.banner-area-info h3 {
+		font-size: 17px;
+		line-height: 26px;
+	}
+	.banner-area-info h2 {
+		display: none;
+	}
+	.banner {
+		height: 835px;
+	}
+}
+@media screen and (max-width: 380px){
+	.banner {
+		height: 785px;
+	}
+}
+
